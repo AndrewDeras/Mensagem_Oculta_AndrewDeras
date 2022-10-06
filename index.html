@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+    <title>MENSAGEM OCULTA</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">MENSAGEM OCULTA</h1>
+    </header>
+    <main>
+      <form>
+        <section class="opcao">
+          <input id="CC" type="radio" value="cifradecesar" />
+          <label for="CC">CIFRA DE CÉSAR</label>
+          <input id="base64" type="radio" value="base64" />
+          <label for="base64">BASE64</label><br /><br />
+          <input id="codificar" type="radio" value="codificar" />
+          <label for="codificar">CODIFICAR</label>
+          <input id="descodificar" type="radio" value="descodificar" />
+          <label for="descodificar">DESCODIFICAR</label>
+          <section id="incremento">
+            <label for="incremento">Incremento:</label>
+            <input
+              class="boxincre"
+              type="number"
+              id="incrementacao"
+              value="1"
+              name="incrementar"
+            />
+          </section>
+        </section>
+
+        <section>
+          <label><h2>MENSAGEM:</h2></label>
+          <textarea class="box" name="mensagem" id="msg" cols="60" rows="10" placeholder="Por favor! Digite sua mensagem..."></textarea
+          >
+        </section>
+
+        <button id="botao" class="botao-estilo">Codificar</button><br /><br />
+
+        <label><strong><h2>RESULTADO:</h2></strong></label
+        >
+        <textarea
+          name="resultado"
+          id="resultado"
+          cols="60"
+          rows="10"
+          class="box"
+        ></textarea>
+      </form>
+    </main>
+  </body>
+</html>

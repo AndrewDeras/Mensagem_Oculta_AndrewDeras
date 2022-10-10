@@ -23,7 +23,7 @@ H2{
     margin-top: 2%; 
     color: #ffff00 ;
 }
-.opcao, .box2{
+.options{
     margin-top: 2%;
     padding: 3px;
 }
@@ -32,7 +32,13 @@ label{
     color: #fffdd0;
     font-weight: bold;
 }
-.botao-estilo{
+.box{
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 2%;
+    box-shadow: #ff4500 0px 2px 4px, #ff4500 0px 7px 13px -3px, #ff4500 0px -3px 0px inset;
+}
+.estiloBotao{
     margin-top: 2%;
     display: inline-block;
     padding: 10px 5px;
@@ -45,18 +51,11 @@ label{
     max-width: max-content;
     border: 2px solid black;
     cursor: pointer;
-  }
-  .botao-estilo:hover {
-    background: #ff4500;
-  }
-.box{
-    padding: 10px 10px;
-    border-radius: 10px;
-    margin-bottom: 2%;
-    box-shadow: #ff4500 0px 2px 4px, #ff4500 0px 7px 13px -3px, #ff4500 0px -3px 0px inset;
-    /* box-shadow: #ff4500 0px 20px 30px -10px; */
 }
-.boxincre{
+  .estiloBotao:hover {
+    background: #ff4500;
+}
+.boxAdd{
     box-shadow: #ff4500 0px 1px 2px, #ff4500 0px 3px 7px -1px, #ff4500 0px -1px 0px inset;
     margin-top: 2%;
     border-radius: 5px;

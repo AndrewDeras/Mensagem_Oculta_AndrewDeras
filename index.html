@@ -5,51 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js" defer></script>
     <title>MENSAGEM OCULTA</title>
   </head>
   <body>
     <header>
       <h1 class="title">KINGSMAN TECHNOLOGY</h1>
     </header>
-    <main>
-      <form>
-        <section class="opcao">
+      
 
-          <section>
-            <input id="CC" type="radio" value="cifraDeCesar" name="opcao0" checked/>
-            <label for="CC">CIFRA DE CÉSAR</label>
-            <input id="base64" type="radio" value="base64" name="opcao0"/>
-            <label for="base64">BASE64</label><br /><br />
-          </section>
+        <div class="options">
+          <input type="radio" id="cifraCesar" name="option1" value="cifraDeCesar">
+          <label for="cifraCesar">CIFRA DE CESAR</label>
+          <input type="radio" id="base64" name="option1" value="base64">
+          <label for="base64">BASE64</label>
+        </div>
 
+        <div class="options">
+          <input type="radio" id="codificar" name="option2" value="codificar">
+          <label for="codificar">CODIFICAR</label>
+          <input type="radio" id="decodificar" name="option2" value="decodificar">
+          <label for="decodificar">DECODIFICAR</label>
+        </div>
 
-          <section>
-            <input id="codificar" type="radio" name="opcao1" onclick="mudaTexto()"checked>
-            <label for="codificar">CODIFICAR</label>
-            <input id="decodificar" type="radio" name="opcao1" onclick="mudaTexto()"/>
-            <label for="decodificar">DECODIFICAR</label>
-          </section>
+        <div>
+          <input class="boxAdd" type="number"  id="incremento"  value="1" name="incrementar"/>
+          <label for="incremento">Incremento:</label>
+        </div>
 
+        <textarea class="box" name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Digite sua mensagem para que seja criptografada!!"></textarea>
 
-          <section id="incrementar">
-            <label for="incremento">Incremento:</label>
-            <input class="boxincre" type="number"  id="incremento"  value="1" name="incrementar"/>
-          </section>
-        </section>
+        <div>
+          <button id="botao" class="estiloBotao"  >CODIFICAR</button>
+        </div>
+        
+        <textarea class="box" name="result" id="result" cols="60" rows="10" placeholder="Sua mensagem criptografada irá aparecer aqui!!"></textarea>
 
-        <section>
-          <label><h2>MENSAGEM:</h2></label>
-          <textarea class="box" name="mensagem" id="msg" cols="60" rows="10" placeholder="Por favor! Digite sua mensagem..."></textarea
-          >
-        </section>
-
-        <button id="botao" class="botao-estilo">Codificar</button><br /><br />
-
-        <label><strong><h2>MENSAGEM CODIFICADA:</h2></strong></label
-        >
-        <textarea name="resultado" id="resultado" cols="60" rows="10" class="box"></textarea>
-      </form>
-    </main>
+      
+    
+    <script src="./js/script.js"></script>
   </body>
 </html>

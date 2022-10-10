@@ -1,13 +1,11 @@
-console.log("andrew");
-const codificar = document.getElementById('codificar');
-const decodificar = document.getElementById('decodificar');
-const botao = document.getElementById('botao');
+let codificar = document.getElementById('codificar');
+let decodificar = document.getElementById('decodificar');
+let botao = document.getElementById('botao');
 
-function mudaTexto () {
-    if (decodificar.checked){
-        botao.innerText = "decodificar";
-    } else if (codificar.checked){
-        botao.innerText = "codificar";
-    }
+function codificarM(){
+    let txt = document.getElementById("mensagem"); 
+    var mat = txt.value.split("");
+    return console.log(mat);
 }
-//__________________________________________________________________
+console.log(codificarM());
+

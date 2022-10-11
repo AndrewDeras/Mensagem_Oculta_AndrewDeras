@@ -28,20 +28,20 @@
         </div>
 
         <div>
-          <input class="boxAdd" type="number"  id="incremento"  value="1" name="incrementar"/>
           <label for="incremento">Incremento:</label>
+          <input class="boxAdd" type="number"  id="incremento"  value="1" name="incrementar"/>          
         </div>
 
         <textarea class="box" name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Digite sua mensagem para que seja criptografada!!"></textarea>
 
         <div>
-          <button id="botao" class="estiloBotao"  >CODIFICAR</button>
+          <button onclick="codificarM()" id="botao" class="estiloBotao"  >CODIFICAR</button>
         </div>
         
         <textarea class="box" name="result" id="result" cols="60" rows="10" placeholder="Sua mensagem criptografada irá aparecer aqui!!"></textarea>
 
       
     
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>

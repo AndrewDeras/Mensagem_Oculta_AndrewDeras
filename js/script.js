@@ -1,11 +1,22 @@
-let codificar = document.getElementById('codificar');
-let decodificar = document.getElementById('decodificar');
+var incremento = parseInt(document.getElementById('incremento').value);
 let botao = document.getElementById('botao');
+console.log(incremento);
+console.log(typeof incremento);
+
 
 function codificarM(){
-    let txt = document.getElementById("mensagem"); 
-    var mat = txt.value.split("");
-    return console.log(mat);
+    let mensagem = document.getElementById("mensagem"); 
+    let matM = mensagem.value.split("");
+    let msgNum = matM.map((arrayN) => arrayN.charCodeAt());
+    console.log(msgNum);
+    let msgIncremento = msgNum.map((arrayN) => arrayN + incremento);
+    console.log(msgIncremento);
+    let mensagemNova = msgIncremento.map((arrayN) => String.fromCharCode(arrayN)).join("");
+    console.log(mensagemNova);
+    return mensagemNova;
 }
 console.log(codificarM());
 
+function resultado (){
+    
+}

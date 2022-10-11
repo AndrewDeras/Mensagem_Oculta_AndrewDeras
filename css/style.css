@@ -52,11 +52,41 @@ label{
     border: 2px solid black;
     cursor: pointer;
 }
-  .estiloBotao:hover {
+.estiloBotao2{
+    height: 50px;
+    width: 50px;
+    margin-top: 2%;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 10px 5px;
+    background: #ff7f7f;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15pt;
+    font-weight: bold;
+    max-width: max-content;
+    border: 2px solid black;
+    cursor: pointer;
+}
+  .estiloBotao:hover, .estiloBotao2:hover {
     background: #ff4500;
 }
+.maisMenos{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .boxAdd{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
     box-shadow: #ff4500 0px 1px 2px, #ff4500 0px 3px 7px -1px, #ff4500 0px -1px 0px inset;
     margin-top: 2%;
     border-radius: 5px;
+    padding-top: 11px;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
 }

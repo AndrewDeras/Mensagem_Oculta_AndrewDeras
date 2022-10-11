@@ -1,8 +1,12 @@
-var incremento = parseInt(document.getElementById('incremento').value);
-let botao = document.getElementById('botao');
+var incremento = parseInt(document.getElementById('incremento').value); 
 console.log(incremento);
 console.log(typeof incremento);
 
+var btnMais = document.getElementById('btnMais');
+
+btnMais.addEventListener('click', function(){
+    
+})
 
 function codificarM(){
     let mensagem = document.getElementById("mensagem"); 

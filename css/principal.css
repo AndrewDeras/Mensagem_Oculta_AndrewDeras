@@ -9,7 +9,7 @@ body{
     width: 700px;
     margin: 0 auto;
     background: #008080;
-    text-align: center;
+    text-align: center;  
 }
 H1{
     font-family: 'Playfair Display', serif;
@@ -90,13 +90,13 @@ textarea, input{
     align-items: center;
 }
 .boxAdd{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin-right: 10px;
     box-shadow: #ff4500 0px 1px 2px, #ff4500 0px 3px 7px -1px, #ff4500 0px -1px 0px inset;
     margin-top: 2%;
     border-radius: 5px;
-    padding-top: 11px;
+    justify-content: center;
     text-align: center;
     font-size: 15pt;
     font-weight: bold;

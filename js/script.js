@@ -1,26 +1,50 @@
-var incremento = parseInt(document.getElementById('incremento').value); 
-console.log(incremento);
-console.log(typeof incremento);
+let codificar = document.getElementById('codificar');
+let decodificar = document.getElementById('decodificar');
+let botao = document.getElementById('botao');
+let resultado = document.getElementById('result');
+let cesar = document.getElementById('cifraCesar');
+let base64 = document.getElementById('base64');
 
-var btnMais = document.getElementById('btnMais');
+function btnChange(){
+    if (decodificar.checked){
+        botao.innerText = "DECODIFICAR"
+    }
+}
 
-btnMais.addEventListener('click', function(){
-    
-})
+function resposta (){
+    let mensagem = document.getElementById('mensagem').value;
+    if (cesar.checked){
+        if (codificar.checked){
+            resultado.innerText = codificarCC();
+        } else if (decodificar.checked){
+            resultado.innerText = decodificarCC();
+        }
+    }  
+    else if (base64.checked){
+        if (codificar.checked){
+            resultado.innerText = btoa(mensagem);
+        } else if (decodificar.checked) {
+            resultado.innerText = atob(mensagem);
+        } 
+    }
+    }
 
-function codificarM(){
-    let mensagem = document.getElementById("mensagem"); 
+
+function codificarCC(){
+    let incremento = parseInt(document.getElementById('incremento').value);
+    let mensagem = document.getElementById("mensagem");     
     let matM = mensagem.value.split("");
     let msgNum = matM.map((arrayN) => arrayN.charCodeAt());
-    console.log(msgNum);
     let msgIncremento = msgNum.map((arrayN) => arrayN + incremento);
-    console.log(msgIncremento);
     let mensagemNova = msgIncremento.map((arrayN) => String.fromCharCode(arrayN)).join("");
-    console.log(mensagemNova);
     return mensagemNova;
 }
-console.log(codificarM());
-
-function resultado (){
-    
+function decodificarCC(){
+    let incremento = parseInt(document.getElementById('incremento').value);
+    let mensagem = document.getElementById("mensagem");     
+    let matM = mensagem.value.split("");
+    let msgNum = matM.map((arrayN) => arrayN.charCodeAt());
+    let msgIncremento = msgNum.map((arrayN) => arrayN - incremento);
+    let mensagemNova = msgIncremento.map((arrayN) => String.fromCharCode(arrayN)).join("");
+    return mensagemNova;
 }

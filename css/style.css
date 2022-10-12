@@ -38,6 +38,17 @@ label{
     margin-top: 2%;
     box-shadow: #ff4500 0px 2px 4px, #ff4500 0px 7px 13px -3px, #ff4500 0px -3px 0px inset;
 }
+::placeholder{
+    text-align: center;
+    color: black;
+}
+textarea, input{
+    background: #fffdd0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10pt;
+    color: black;
+}
 .estiloBotao{
     margin-top: 2%;
     display: inline-block;
@@ -52,7 +63,7 @@ label{
     border: 2px solid black;
     cursor: pointer;
 }
-.estiloBotao2{
+/* .estiloBotao2{
     height: 50px;
     width: 50px;
     margin-top: 2%;
@@ -68,13 +79,14 @@ label{
     max-width: max-content;
     border: 2px solid black;
     cursor: pointer;
-}
-  .estiloBotao:hover, .estiloBotao2:hover {
+} */
+.estiloBotao:hover, .estiloBotao2:hover {
     background: #ff4500;
 }
 .maisMenos{
     /* border: 1px solid black; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

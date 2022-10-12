@@ -31,7 +31,7 @@ p{
     margin-top: 15px;
     color: #fffafa;
 }
-main{
+.main{
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -57,49 +57,55 @@ main{
 /* CSS */
 .button-53 {
     margin-top: 15px;
-  background-color: #fffdd0;
-  border: 2px solid #ff4500;
-  box-sizing: border-box;
-  color: #000000;
-  font-family: 'Gemunu Libre', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.75rem;
-  padding: .75rem 1.65rem;
-  text-align: center;
-  text-decoration-thickness: auto;
-  width: 100%;
-  max-width: 460px;
-  position: relative;
-  cursor: pointer;
-  transform: rotate(-2deg);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+    background-color: #fffdd0;
+    border: 2px solid #ff4500;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    text-align: center;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .button-53:focus {
-  outline: 0;
+    outline: 0;
 }
 
 .button-53:after {
-  content: '';
-  position: absolute;
-  border: 1px solid black;
-  bottom: 4px;
-  left: 4px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
+    content: '';
+    position: absolute;
+    border: 1px solid black;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
 }
 
 .button-53:hover:after {
-  bottom: 2px;
-  left: 2px;
+    bottom: 2px;
+    left: 2px;
 }
-
 @media (min-width: 768px) {
-  .button-53 {
-    padding: .75rem 3rem;
-    font-size: 1.25rem;
+    .button-53 {
+      padding: .75rem 3rem;
+      font-size: 1.25rem;
+    }
   }
+footer{
+    color: #fffdd0;
+    margin-top: 25px;
+}
+.footer1 a{
+    margin-top: 10px;
 }

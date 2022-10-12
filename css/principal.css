@@ -102,3 +102,10 @@ textarea, input{
     font-size: 15pt;
     font-weight: bold;
 }
+footer{
+    color: #fffdd0;
+    margin-top: 25px;
+}
+.footer1 a{
+    margin-top: 10px;
+}

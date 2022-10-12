@@ -1,6 +1,7 @@
 console.log("Andrew");
 let cesar = document.getElementById('cifraCesar');
-let base64 = document.getElementById('base64');let codificar = document.getElementById('codificar');
+let base64 = document.getElementById('base64');
+let codificar = document.getElementById('codificar');
 let decodificar = document.getElementById('decodificar');
 let botao = document.getElementById('botao');
 let resultado = document.getElementById('result');
@@ -13,7 +14,6 @@ function mostrar(){
 function esconder(){
     divIncremento.style.display = 'none';
 }
-
 cesar.addEventListener('change', mostrar);
 base64.addEventListener('change', esconder);
 
@@ -28,6 +28,7 @@ function btnChange(){
 
 function resposta (){
     let mensagem = document.getElementById('mensagem').value;
+// Cifra de césar.    
     if (cesar.checked){
         if (codificar.checked){
             resultado.innerText = codificarCC();
@@ -36,7 +37,8 @@ function resposta (){
         } else {
             alert('Por favor selecione se deseja codificar ou decodificar a mensagem!!');
         }
-    }  
+    }
+// base64.     
     else if (base64.checked){
         if (codificar.checked){
             resultado.innerText = btoa(mensagem);
@@ -46,8 +48,9 @@ function resposta (){
             alert('Por favor selecione se deseja codificar ou decodificar a mensagem!!');
         }
     }
+// caso os campos de tipo de condificação não sejam selecionados.
     else {
-        alert ("Selcione uma opção de criptografia e se deseja codificar ou decodificar!!")
+        alert('Por favor selecione se deseja cifra de césar ou base64!!');
     }
 }
      
@@ -57,14 +60,17 @@ function codificarCC(){
     //transformar a mensagem em um array
     let matrizMensagem = mensagem.split(''); 
     // transformar cada elemento do array em charCode
-    let mensagemChar = matrizMensagem.map((caracteres)=> caracteres.charCodeAt());    
+    let mensagemChar = matrizMensagem.map((caracteres)=> caracteres.charCodeAt());   
+    console.log(mensagemChar);
     // já com a mensagem em formato charCode, adicionar o incremento
     let mensagemCharMaisIncremento = mensagemChar.map((caracteres) => caracteres + incremento );
     // feito o incremento, transformar o array em formato String e separar cada elemento com espaço vazio com a ajuda da função join 
     let mensagemCodificada = mensagemCharMaisIncremento.map((caracteres) => String.fromCharCode(caracteres)).join("");
     //retornar a mensagem codificada
     return mensagemCodificada;
+
 }
+
 function decodificarCC(){
     let incremento = parseInt(document.getElementById('incremento').value);
     let mensagem = document.getElementById("mensagem").value;

@@ -6,99 +6,100 @@
     box-sizing: border-box;
 }
 body{
-    width: 700px;
     margin: 0 auto;
     background: #008080;
     text-align: center;
-    position: relative;
 }
 H1{
     font-family: 'Playfair Display', serif;
     font-size: 35pt;
     color: #ffff00 ;
 }
-H2{
+h2{
+    font-size: 30pt;
     font-family: 'Gemunu Libre', sans-serif;
-    font-size: 25pt;
-    margin-top: 2%; 
-    color: #ffff00 ;
 }
-.options{
-    margin-top: 2%;
-    padding: 3px;
+.our{
+    font-size: 30pt;
+    font-family: 'Gemunu Libre', sans-serif;
+    color: #ffff00 ;    
 }
-label{
-    margin-top: 2%;
-    color: #fffdd0;
-    font-weight: bold;
-}
-.box{
-    padding: 10px 10px;
-    border-radius: 10px;
-    margin-top: 2%;
-    box-shadow: #ff4500 0px 2px 4px, #ff4500 0px 7px 13px -3px, #ff4500 0px -3px 0px inset;
-}
-::placeholder{
-    text-align: center;
-    color: black;
-}
-textarea, input{
-    background: #fffdd0;
-    text-align: center;
-    font-weight: bold;
-    font-size: 10pt;
-    color: black;
-}
-.estiloBotao{
-    margin-top: 2%;
-    display: inline-block;
-    padding: 10px 5px;
-    background: #ff7f7f;
-    border-radius: 5px;
-    text-transform: uppercase;
-    color: black;
+
+p{
+    text-align: justify;
     font-size: 15pt;
-    font-weight: bold;
-    max-width: max-content;
-    border: 2px solid black;
-    cursor: pointer;
+    margin-top: 15px;
+    color: #fffafa;
 }
-/* .estiloBotao2{
-    height: 50px;
-    width: 50px;
-    margin-top: 2%;
-    margin-right: 10px;
-    display: inline-block;
-    padding: 10px 5px;
-    background: #ff7f7f;
-    border-radius: 5px;
-    text-transform: uppercase;
-    color: black;
-    font-size: 15pt;
-    font-weight: bold;
-    max-width: max-content;
-    border: 2px solid black;
-    cursor: pointer;
-} */
-.estiloBotao:hover, .estiloBotao2:hover {
-    background: #ff4500;
-}
-.incre{
-    /* border: 1px solid black; */
+main{
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     justify-content: center;
-    align-items: center;
+    margin-right: 40px ; 
+    margin-left: 40px;
 }
-.boxAdd{
-    height: 50px;
-    width: 50px;
-    margin-right: 10px;
-    box-shadow: #ff4500 0px 1px 2px, #ff4500 0px 3px 7px -1px, #ff4500 0px -1px 0px inset;
-    margin-top: 2%;
-    border-radius: 5px;
-    padding-top: 11px;
-    text-align: center;
-    font-size: 15pt;
-    font-weight: bold;
+.tipo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+.tipo img{
+    margin-top: 15px;
+    height: 100px;
+    width: 250px;
+}
+
+/* CSS */
+.button-53 {
+    margin-top: 15px;
+  background-color: #fffdd0;
+  border: 2px solid #ff4500;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  text-align: center;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: '';
+  position: absolute;
+  border: 1px solid black;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
 }

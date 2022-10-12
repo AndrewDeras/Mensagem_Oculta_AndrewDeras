@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/principal.css" />
+    <title>KINGSMAN TECHNOLOGY</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html" style="text-decoration: none;"><h1 class="title">KINGSMAN TECHNOLOGY</h1></a>
+    </header>
+      
+      <main>
+
+        <div class="options">
+          <input type="radio" id="cifraCesar" name="option1" value="cifraDeCesar" >
+          <label for="cifraCesar">CIFRA DE CESAR</label>
+          <input type="radio" id="base64" name="option1" value="base64">
+          <label for="base64">BASE64</label>
+        </div>
+
+        <div class="options">
+          <input onclick="btnChange()" type="radio" id="codificar" name="option2" value="codificar" >
+          <label for="codificar">CODIFICAR</label>
+          <input onclick="btnChange()" type="radio" id="decodificar" name="option2" value="decodificar">
+          <label for="decodificar">DECODIFICAR</label>
+        </div>
+
+        <div id="incre">
+          <label for="incremento">Incremento</label>
+          <input name="incremento" class="boxAdd" type="number"  id="incremento" value="1" min="1" >
+          <!-- <button id="btnMais" class="estiloBotao2">+1</button>     
+          <button class="estiloBotao2">-1</button>      -->
+        </div>
+
+        <textarea class="box" name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Digite sua mensagem para que seja criptografada!!"></textarea>
+
+        <div>
+          <button onclick="resposta()" id="botao" class="estiloBotao"  >CODIFICAR</button>
+        </div>
+        
+        <textarea class="box" name="result" id="result" cols="60" rows="10" placeholder="Sua mensagem criptografada irá aparecer aqui!!"></textarea>
+
+      </main>
+    
+      
+  </body>
+</html>

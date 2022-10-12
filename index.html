@@ -4,48 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <title>MENSAGEM OCULTA</title>
+    <title>CIFRA DE CÉSAR E BASE64</title>
   </head>
   <body>
     <header>
-      <h1 class="title">KINGSMAN TECHNOLOGY</h1>
+      <a style="text-decoration: none" href="./principal.html"
+        ><h1 class="title">Cifra de César e Base64</h1></a
+      >
     </header>
-      
-      <main>
 
-        <div class="options">
-          <input type="radio" id="cifraCesar" name="option1" value="cifraDeCesar" checked>
-          <label for="cifraCesar">CIFRA DE CESAR</label>
-          <input type="radio" id="base64" name="option1" value="base64">
-          <label for="base64">BASE64</label>
-        </div>
+    <main>
+      <div class="tipo">
+        <section><h2>Cifra de César</h2></section>
+        <p>
+          Segundo
+          <a
+            style="text-decoration: none; color: black; font-weight: bold"
+            href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar"
+            >wikipedia</a
+          >, em criptografia, a Cifra de César, também conhecida como cifra de
+          troca, código de César ou troca de César, é uma das mais simples e
+          conhecidas técnicas de criptografia. É um tipo de cifra de
+          substituição na qual cada letra do texto é substituída por outra, que
+          se apresenta no alfabeto abaixo dela um número fixo de vezes. Por
+          exemplo, com uma troca de três posições, A seria substituído por D, B
+          se tornaria E, e assim por diante. O nome do método é em homenagem a
+          Júlio César, que o usou para se comunicar com os seus generais.
+        </p>
+        <img src="./img/CC.png" alt="" />
+      </div>
 
-        <div class="options">
-          <input onclick="btnChange()" type="radio" id="codificar" name="option2" value="codificar" checked>
-          <label for="codificar">CODIFICAR</label>
-          <input onclick="btnChange()" type="radio" id="decodificar" name="option2" value="decodificar">
-          <label for="decodificar">DECODIFICAR</label>
-        </div>
+      <div class="tipo">
+        <section><h2>Base64</h2></section>
+        <p>
+          <a
+            style="text-decoration: none; color: black; font-weight: bold"
+            href="https://pt.wikipedia.org/wiki/Base64"
+            >Base64
+          </a>
+          é um método para codificação de dados para transferência na Internet.
+          É utilizado frequentemente para transmitir dados binários por meios de
+          transmissão que lidam apenas com texto, como por exemplo para enviar
+          arquivos anexos por e-mail. É constituído por 64 caracteres que deram
+          origem ao seu nome.
+        </p>
+        <img
+          style="height: 100px; width: 320px"
+          src="./img/base64.PNG"
+          alt=""
+        />
+      </div>
+    </main>
 
-        <div id="incre">
-          <label for="incremento">Incremento</label>
-          <input name="incremento" class="boxAdd" type="number"  id="incremento" value="1" min="1" >
-          <!-- <button id="btnMais" class="estiloBotao2">+1</button>     
-          <button class="estiloBotao2">-1</button>      -->
-        </div>
+    <section class="our">
+      <h2>Confira nossa ferramenta de codificação.</h2>
+    </section>
+    <br />
 
-        <textarea class="box" name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Digite sua mensagem para que seja criptografada!!"></textarea>
+    <div>
+       
+      <a style="text-decoration: none" href="./principal.html"
+        ><button class="button-53" role="button">KINGSMAN TECHNOLOGY</button></a
+      >
+    </div>
 
-        <div>
-          <button onclick="resposta()" id="botao" class="estiloBotao"  >CODIFICAR</button>
-        </div>
-        
-        <textarea class="box" name="result" id="result" cols="60" rows="10" placeholder="Sua mensagem criptografada irá aparecer aqui!!"></textarea>
-
-      </main>
-    
-    
+    <footer style="height: 30px"></footer>
   </body>
 </html>

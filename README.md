@@ -19,7 +19,7 @@ A projeto utiliza como base as metodologias de codificação como cifra de césa
 Foi colocado em prática o aprendido em sala de aula, além de consultar sites como MDN, stackOverflow e ajuda dos companheiros de turma.
 
 
-📌 Link do projeto no github Pages: https://andrewderas.github.io/Mensagem_Oculta_AndrewDeras/index.html
+📌 Link do projeto no github Pages: https://andrewderas.github.io/Mensagem_Oculta_AndrewDeras/
  
 
 Criando e Desenvolvido por Andrew Barbosa Deras!!

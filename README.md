@@ -2,7 +2,8 @@
 
 ##  Proposta
 
-A projeto utiliza como base as metodologias de codificação como cifra de césar e base 65 para codificar e decodificar qualquer tipo de mensagem. 
+A projeto utiliza como base as metodologias de codificação como cifra de césar e base 65.
+Com a finalidade de codificar e decodificar qualquer tipo de mensagem. 
 
 ## 🖥️ Tecnologias utilizadas
 

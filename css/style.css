@@ -83,10 +83,10 @@ textarea, input{
 .estiloBotao:hover, .estiloBotao2:hover {
     background: #ff4500;
 }
-.maisMenos{
+.incre{
     /* border: 1px solid black; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }

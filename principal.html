@@ -6,6 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/principal.css" />
+    <style>
+      @media screen and (max-width:580px){
+        .options, .box, .btn{
+            margin-right: 10%;
+            margin-left: 10%;
+            width: 80%;
+        }
+        .boxAdd{
+          font-size: 10pt;
+          height: 30px;
+          width: 30px;
+        }
+        .estiloBotao{
+          font-size: 10pt;
+        }
+        h1{
+          font-size: 20pt;
+        }
+        h2{
+          font-size: 15pt;
+        }
+        h3{
+        font-size: 10pt;
+        }
+        label{
+          font-size: 8pt;
+        }
+        textarea, input{
+          font-size: 8pt;
+        }
+      }
+    </style>
     <title>KINGSMAN TECHNOLOGY</title>
   </head>
   <body>
@@ -29,7 +61,7 @@
           <label for="decodificar">DECODIFICAR</label>
         </div>
 
-        <div id="incre">
+        <div class="incremento1" id="incre">
           <label for="incremento">Incremento</label>
           <input name="incremento" class="boxAdd" type="number"  id="incremento" value="1" min="1" >
           <!-- <button id="btnMais" class="estiloBotao2">+1</button>     
@@ -38,7 +70,7 @@
 
         <textarea class="box" name="mensagem" id="mensagem" autocomplete="off" spellcheck="false" cols="60" rows="10" placeholder="Digite sua mensagem para que seja criptografada!!"></textarea>
 
-        <div>
+        <div  class="btn">
           <button onclick="resposta()" id="botao" class="estiloBotao"  >CODIFICAR</button>
         </div>
         

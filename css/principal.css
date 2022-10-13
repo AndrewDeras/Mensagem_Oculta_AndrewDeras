@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    width: 700px;
     margin: 0 auto;
     background: #008080;
     text-align: center;  
+}
+main{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
 }
 H1{
     font-family: 'Playfair Display', serif;
@@ -27,7 +32,6 @@ H2{
     padding: 3px;
 }
 label{
-    margin-top: 2%;
     color: #fffdd0;
     font-weight: bold;
 }
@@ -62,41 +66,24 @@ textarea, input{
     border: 2px solid black;
     cursor: pointer;
 }
-/* .estiloBotao2{
-    height: 50px;
-    width: 50px;
-    margin-top: 2%;
-    margin-right: 10px;
-    display: inline-block;
-    padding: 10px 5px;
-    background: #ff7f7f;
-    border-radius: 5px;
-    text-transform: uppercase;
-    color: black;
-    font-size: 15pt;
-    font-weight: bold;
-    max-width: max-content;
-    border: 2px solid black;
-    cursor: pointer;
-} */
 .estiloBotao:hover, .estiloBotao2:hover {
     background: #ff4500;
 }
-.incre{
-    /* border: 1px solid black; */
+.incremento1{
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
     align-items: center;
 }
 .boxAdd{
     height: 40px;
     width: 40px;
-    margin-right: 10px;
     box-shadow: #ff4500 0px 1px 2px, #ff4500 0px 3px 7px -1px, #ff4500 0px -1px 0px inset;
-    margin-top: 2%;
     border-radius: 5px;
     justify-content: center;
+    align-content: center;
     text-align: center;
     font-size: 15pt;
     font-weight: bold;

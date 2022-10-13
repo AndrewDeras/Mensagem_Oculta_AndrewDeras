@@ -5,6 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+     @media screen and (max-width:768px) {
+      .main{
+        margin: 0;
+        flex-direction: column;
+      }
+      .tipo{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+      }
+      h1{
+        font-size: 25pt;
+      }
+      h2{
+        font-size: 20pt;
+      }
+      h3{
+        font-size: 10pt;
+      }
+      p{
+        font-size: 12pt;
+      }
+      #btn{
+        margin-right: 10%;
+        margin-left: 10%;
+      }
+}
+    </style>
     <title>CIFRA DE CÉSAR E BASE64</title>
   </head>
   <body>
@@ -19,7 +50,7 @@
         <section><h2>Cifra de César</h2></section>
         <p>
           Segundo
-          <a
+          <a target="_blank"
             style="text-decoration: none; color: black; font-weight: bold"
             href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar"
             >wikipedia</a
@@ -38,7 +69,7 @@
       <div class="tipo">
         <section><h2>Base64</h2></section>
         <p>
-          <a
+          <a target="_blank"
             style="text-decoration: none; color: black; font-weight: bold"
             href="https://pt.wikipedia.org/wiki/Base64"
             >Base64
@@ -62,7 +93,7 @@
     </section>
     <br />
 
-    <div>
+    <div id="btn">
       <a style="text-decoration: none" href="./principal.html"
         ><button class="button-53" role="button">KINGSMAN TECHNOLOGY</button></a
       >
@@ -70,7 +101,7 @@
 
     <footer>
       <div class="footer1">
-        <h3>Criado e Desenvolvido por Andrew Barbosa Deras.</h3>
+        <h3>Criado e Desenvolvido por <strong style="color: black;  " >Andrew Deras</strong>.</h3>
         <a href="https://github.com/AndrewDeras" target="_blank"
           ><img src="./img/github.png" alt=""
         /></a>

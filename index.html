@@ -7,23 +7,36 @@
     <link rel="shortcut icon" href="./img/qr-code.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css" />
     <style>
-     @media screen and (max-width:768px) {
-      .main{
+    
+       @media screen and (max-width:1024px) {
+        .main{
         margin: 0;
         flex-direction: column;
       }
-      .tipo, .help, .imgHelp0{
+        .tipo, .help, .imgHelp0{
         margin-left: 10%;
         margin-right: 10%;
         width: 80%;
         text-align: center;
         justify-content: center;
       }
+        .imgHelp{
+        flex-direction: column ;
+        align-items: center;
+      }
+        .imgHelp img{
+        width: 100%;
+        margin-top: 40px;
+      }
       h1{
         font-size: 25pt;
+        text-shadow: 3px 0px 2px #ff4500; 
       }
       h2{
         font-size: 20pt;
+      }
+      #shadowH2{
+        text-shadow: 3px 0px 2px #ff4500; 
       }
       h3{
         font-size: 10pt;
@@ -39,6 +52,14 @@
         margin-left: 10%;
       }
 }
+      @media (min-width: 300px) and (max-width: 480px){
+        p{
+        font-size: 10pt;
+      }
+      #shadowH2{
+        text-shadow: 3px 0px 2px #ff4500; 
+      }
+} 
     </style>
     <title>CIFRA DE CÉSAR E BASE64</title>
   </head>
@@ -93,7 +114,7 @@
     </div>
 
     <section class="our">
-      <h2>Confira nossa ferramenta de codificação.</h2>
+      <h2 id="shadowH2" style="text-shadow: 3px 0px 2px #ff4500; ">Confira nossa ferramenta de codificação.</h2>
     </section>
     <br />
 
@@ -104,7 +125,7 @@
     </div>
 
     <section style="margin-top: 5%;" class="our">
-        <h2>Como usar nossa ferramenta.</h2>
+        <h2 id="shadowH2" style="text-shadow: 3px 0px 2px #ff4500; ">Como usar nossa ferramenta.</h2>
     </section>
     
     <div class="help">

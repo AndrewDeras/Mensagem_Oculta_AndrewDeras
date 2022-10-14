@@ -16,6 +16,7 @@ H1{
     font-family: 'Playfair Display', serif;
     font-size: 35pt;
     color: #ffff00 ;
+    text-shadow: 3px 0px 2px #ff4500; 
 }
 h2{
     font-size: 30pt;
@@ -128,7 +129,9 @@ p{
   }
 footer{
     color: #fffdd0;
-    margin-top: 25px;
+}
+.footer1{
+    margin-top: 40px;
 }
 .footer1 a{
     margin-top: 10px;

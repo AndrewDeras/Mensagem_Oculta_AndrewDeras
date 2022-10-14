@@ -19,7 +19,12 @@ main{
 H1{
     font-family: 'Playfair Display', serif;
     font-size: 35pt;
-    color: #ffff00 ;
+    color: #ffff00;
+    text-shadow: 3px 0px 2px #ff4500; 
+}
+.title:hover{
+    font-size: 40pt;
+    text-shadow: 3px 0px 2px #ff4500;
 }
 H2{
     font-family: 'Gemunu Libre', sans-serif;

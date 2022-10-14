@@ -34,7 +34,9 @@ function resposta (){
             resultado.innerText = codificarCC();
         } else if (decodificar.checked){
             resultado.innerText = decodificarCC();
-        } 
+        } else {
+            alert('Por favor selecione se deseja codificar ou decodificar a mensagem!!');
+        }
     }
 // base64.     
     else if (base64.checked){

@@ -2,7 +2,7 @@
 
 ##  Proposta
 
-A projeto utiliza como base as metodologias de codificação como cifra de césar e base 65.
+A projeto utiliza como base as metodologias de codificação como cifra de césar e base64.
 Com a finalidade de codificar e decodificar qualquer tipo de mensagem. 
 
 ## 🖥️ Tecnologias utilizadas
@@ -23,7 +23,7 @@ Foi colocado em prática o aprendido em sala de aula, além de consultar sites c
 📌 Link do projeto no github Pages: https://andrewderas.github.io/Mensagem_Oculta_AndrewDeras/
  
 
-Criando e Desenvolvido por Andrew Barbosa Deras!!
+Criando e Desenvolvido por Andrew Deras!!
 
 
 

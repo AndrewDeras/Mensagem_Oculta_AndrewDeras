@@ -20,9 +20,13 @@ base64.addEventListener('change', esconder);
 function btnChange(){
     if (codificar.checked){
         botao.innerText = 'CODIFICAR';
+        mensagem.innerText = placeholder="Coloque aqui a mensagem para que seja codificada!!";
+        resultado.innerText = placeholder="Sua mensagem codificada irá aparecer aqui!!";
     }
     else {
         botao.innerText = 'DECODIFICAR';
+        mensagem.innerText = placeholder="Coloque aqui a mensagem para que seja decodificada!!";
+        resultado.innerText = placeholder="Sua mensagem decodificada irá aparecer aqui!!";
     } 
 }
 

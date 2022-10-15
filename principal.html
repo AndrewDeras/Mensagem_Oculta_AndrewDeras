@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/qr-code.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/qr-code.svg" type="image/x-icon" />
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/principal.css" />
     <style>
-      @media screen and (max-width:580px){
-        .options, .box, .btn{   
+      @media screen and (max-width: 580px) {
+        .options,
+        .box,
+        .btn {
           margin-right: 10%;
           margin-left: 10%;
           width: 80%;
@@ -19,90 +21,142 @@
           display: flex;
           justify-items: baseline;
           justify-content: center;
-          align-items: center; 
-          align-content:center;
+          align-items: center;
+          align-content: center;
         }
-        .boxAdd{
+        .boxAdd {
           font-size: 10pt;
           height: 30px;
           width: 30px;
         }
-        .estiloBotao{
+        .estiloBotao {
           font-size: 10pt;
         }
-        h1{
-          font-size: 18pt;
-          text-shadow: 3px 0px 2px #ff4500; 
+        .estiloBotao:hover{
+          font-size: 12pt;
+          background: #ff4500;
         }
-        h2{
+        h1 {
+          font-size: 18pt;
+          text-shadow: 3px 0px 2px #ff4500;
+        }
+        h2 {
           font-size: 15pt;
         }
-        h3{
-        font-size: 10pt;
+        h3 {
+          font-size: 10pt;
         }
-        label{
+        label {
           margin-right: 8px;
           font-size: 8pt;
         }
-        textarea, input{
+        textarea,
+        input {
           font-size: 8pt;
         }
+      }
+      @media screen and (max-width: 375px){
+          h3{
+            font-size: 8pt;
+          }
       }
     </style>
     <title>KINGSMAN TECHNOLOGY</title>
   </head>
   <body>
     <header>
-      <a href="./index.html" style="text-decoration: none;"><h1 class="title">KINGSMAN TECHNOLOGY</h1></a>
+      <a href="./index.html" style="text-decoration: none"
+        ><h1 class="title">KINGSMAN TECHNOLOGY</h1></a
+      >
     </header>
-      
-      <main>
 
-        <div class="options">
-          <input type="radio" id="cifraCesar" name="option1" value="cifraDeCesar">
-          <label for="cifraCesar">CIFRA DE CESAR</label>
-          <input type="radio" id="base64" name="option1" value="base64">
-          <label for="base64">BASE64</label>
-        </div>
+    <main>
+      <div class="options">
+        <input
+          type="radio"
+          id="cifraCesar"
+          name="option1"
+          value="cifraDeCesar"
+        />
+        <label for="cifraCesar">CIFRA DE CESAR</label>
+        <input type="radio" id="base64" name="option1" value="base64" />
+        <label for="base64">BASE64</label>
+      </div>
 
-        <div class="options">
-          <input onclick="btnChange()" type="radio" id="codificar" name="option2" value="codificar" >
-          <label for="codificar">CODIFICAR</label>
-          <input onclick="btnChange()" type="radio" id="decodificar" name="option2" value="decodificar">
-          <label for="decodificar">DECODIFICAR</label>
-        </div>
+      <div class="options">
+        <input
+          onclick="btnChange()"
+          type="radio"
+          id="codificar"
+          name="option2"
+          value="codificar"
+        />
+        <label for="codificar">CODIFICAR</label>
+        <input
+          onclick="btnChange()"
+          type="radio"
+          id="decodificar"
+          name="option2"
+          value="decodificar"
+        />
+        <label for="decodificar">DECODIFICAR</label>
+      </div>
 
-        <div class="incremento1" id="incre">
-          <label for="incremento">Incremento</label>
-          <input name="incremento" class="boxAdd" type="number"  id="incremento" value="1" min="1" >
-          <!-- <button id="btnMais" class="estiloBotao2">+1</button>     
-          <button class="estiloBotao2">-1</button>      -->
-        </div>
+      <div class="incremento1" id="incre">
+        <label for="incremento">Incremento</label>
+        <input
+          name="incremento"
+          class="boxAdd"
+          type="number"
+          id="incremento"
+          value="1"
+          min="1"
+        />
+      </div>
 
-        <textarea class="box" name="mensagem" id="mensagem" autocomplete="off" spellcheck="false" cols="60" rows="10" placeholder="Digite sua mensagem para que seja criptografada!!"></textarea>
+      <textarea
+        class="box"
+        name="mensagem"
+        id="mensagem"
+        autocomplete="off"
+        spellcheck="false"
+        cols="60"
+        rows="10"
+        placeholder="POR FAVOR, SELECIONE AS OPÇÕES DESEJADAS ACIMA!!"
+      ></textarea>
 
-        <div  class="btn">
-          <button onclick="resposta()" id="botao" class="estiloBotao"  >CODIFICAR</button>
-        </div>
-        
-        <textarea class="box" name="result" id="result" autocomplete="off" spellcheck="false"  cols="60" rows="10" placeholder="Sua mensagem criptografada irá aparecer aqui!!"></textarea>
+      <div class="btn">
+        <button onclick="resposta()" id="botao" class="estiloBotao">
+          CODIFICAR
+        </button>
+      </div>
 
-      </main>
+      <textarea
+        class="box"
+        name="result"
+        id="result"
+        autocomplete="off"
+        spellcheck="false"
+        cols="60"
+        rows="10"
+        placeholder=""
+      ></textarea>
+    </main>
 
-      <footer>
-        <div class="footer1">
-          <h3>CCriado e Desenvolvido por <strong style="color: #ffff00 ;" >Andrew Deras</strong>.</h3>
-          <a href="https://github.com/AndrewDeras" target="_blank"
-            ><img src="./img/github.png" alt=""
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/andrewderas/"
-            target="_blank"
-            ><img src="./img/linkedin.png" alt=""
-          /></a>
-        </div>
-      </footer>
-    
-      
+    <footer>
+      <div class="footer1">
+        <h3>
+          Criado e Desenvolvido por
+          <strong style="color: #ffff00">Andrew Deras</strong>.
+        </h3>
+        <a href="https://github.com/AndrewDeras" target="_blank"
+          ><img src="./img/github.png" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/andrewderas/" target="_blank"
+          ><img src="./img/linkedin.png" alt=""
+        /></a>
+      </div>
+    </footer>
+    <a href="./index.html#ajuda"><img class="ajuda" src="./img/help.png" alt=""></a>
   </body>
 </html>

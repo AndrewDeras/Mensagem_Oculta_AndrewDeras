@@ -18,15 +18,16 @@ cesar.addEventListener('change', mostrar);
 base64.addEventListener('change', esconder);
 
 function btnChange(){
+    let msg = document.getElementById('mensagem')
     if (codificar.checked){
         botao.innerText = 'CODIFICAR';
-        mensagem.innerText = placeholder="Coloque aqui a mensagem para que seja codificada!!";
-        resultado.innerText = placeholder="Sua mensagem codificada irá aparecer aqui!!";
+        msg.placeholder = 'Coloque aqui a mensagem para que seja codificada!!';
+        resultado.placeholder = 'Sua mensagem codificada irá aparecer aqui!!';
     }
     else {
         botao.innerText = 'DECODIFICAR';
-        mensagem.innerText = placeholder="Coloque aqui a mensagem para que seja decodificada!!";
-        resultado.innerText = placeholder="Sua mensagem decodificada irá aparecer aqui!!";
+        msg.placeholder = 'Coloque aqui a mensagem para que seja decodificada!!';
+        resultado.place = 'Sua mensagem decodificada irá aparecer aqui!!';
     } 
 }
 

@@ -66,9 +66,9 @@ function codificarCC(){
     let matrizMensagem = mensagem.split(''); 
     // transformar cada elemento do array em charCode
     let mensagemChar = matrizMensagem.map((caracteres)=> caracteres.charCodeAt());   
-    console.log(mensagemChar);
-    let mensagemCharMaisIncremento = mensagemChar.map((caracteres) => 
-    (caracteres <=122 && caracteres >=97 || caracteres <=90 && caracteres >=65 || caracteres <=57 && caracteres >=48 ? caracteres + incremento : caracteres )) ;
+    
+    let mensagemCharMaisIncremento = mensagemChar.map((caracteres) => caracteres + incremento) ;
+    
     // feito o incremento, transformar o array em formato String e separar cada elemento com espaço vazio com a ajuda da função join 
     let mensagemCodificada = mensagemCharMaisIncremento.map((caracteres) => String.fromCharCode(caracteres)).join("");
     //retornar a mensagem codificada
@@ -82,11 +82,11 @@ function decodificarCC(){
     //transformar a mensagem em um array
     let matrizMensagem = mensagem.split(''); 
     // transformar cada elemento do array em charCode
-    let mensagemChar = matrizMensagem.map((caracteres)=> caracteres.charCodeAt());    
+    let mensagemChar = matrizMensagem.map((caracteres)=> caracteres.charCodeAt()); 
+   
     // já com a mensagem em formato charCode, vamos subtrair o incremento excluindo os caracteres especiais
-    let mensagemCharMenosIncremento = mensagemChar.map((caracteres) => 
-    (caracteres <=122 && caracteres >=97 || caracteres <=90 && caracteres >=65 || caracteres <=57 && caracteres >=48 ? caracteres - incremento : caracteres )) ;
-    console.log(mensagemCharMenosIncremento);
+    let mensagemCharMenosIncremento = mensagemChar.map((caracteres) => caracteres - incremento) ;
+   
     // feita a subtração incremento, transformar o array em formato String e separar cada elemento com espaço vazio com a ajuda da função join 
     let mensagemDecodificada = mensagemCharMenosIncremento.map((caracteres) => String.fromCharCode(caracteres)).join("");
     //retornar a mensagem codificada

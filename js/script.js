@@ -27,7 +27,7 @@ function btnChange(){
     else {
         botao.innerText = 'DECODIFICAR';
         msg.placeholder = 'Coloque aqui a mensagem para que seja decodificada!!';
-        resultado.place = 'Sua mensagem decodificada irá aparecer aqui!!';
+        resultado.placeholder = 'Sua mensagem decodificada irá aparecer aqui!!';
     } 
 }
 
@@ -66,14 +66,13 @@ function codificarCC(){
     let matrizMensagem = mensagem.split(''); 
     // transformar cada elemento do array em charCode
     let mensagemChar = matrizMensagem.map((caracteres)=> caracteres.charCodeAt());   
-    
+    // já com a mensagem em formato charCode, vamos somar o incremento 
     let mensagemCharMaisIncremento = mensagemChar.map((caracteres) => caracteres + incremento) ;
     
     // feito o incremento, transformar o array em formato String e separar cada elemento com espaço vazio com a ajuda da função join 
     let mensagemCodificada = mensagemCharMaisIncremento.map((caracteres) => String.fromCharCode(caracteres)).join("");
     //retornar a mensagem codificada
     return mensagemCodificada;
-
 }
 
 function decodificarCC(){
@@ -84,7 +83,7 @@ function decodificarCC(){
     // transformar cada elemento do array em charCode
     let mensagemChar = matrizMensagem.map((caracteres)=> caracteres.charCodeAt()); 
    
-    // já com a mensagem em formato charCode, vamos subtrair o incremento excluindo os caracteres especiais
+    // já com a mensagem em formato charCode, vamos subtrair o incremento 
     let mensagemCharMenosIncremento = mensagemChar.map((caracteres) => caracteres - incremento) ;
    
     // feita a subtração incremento, transformar o array em formato String e separar cada elemento com espaço vazio com a ajuda da função join 
